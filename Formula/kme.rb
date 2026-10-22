@@ -9,7 +9,11 @@ class Kme < Formula
   depends_on macos: :monterey
 
   def install
-    system "swift", "build", "--disable-sandbox", "-c", "release"
+    system "swift", "build", "--disable-sandbox", "-c", "release",
+           "--build-system", "native",
+           "--cache-path", buildpath/".swiftpm-cache",
+           "--config-path", buildpath/".swiftpm-config",
+           "--security-path", buildpath/".swiftpm-security"
     bin.install ".build/release/kme"
   end
 
