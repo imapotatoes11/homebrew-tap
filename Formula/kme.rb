@@ -6,8 +6,7 @@ class Kme < Formula
   license "MIT"
   head "https://github.com/imapotatoes11/kme.git", branch: "main"
 
-  depends_on xcode: ["14.0", :build]
-  depends_on :macos
+  depends_on macos: :monterey
 
   def install
     system "swift", "build", "--disable-sandbox", "-c", "release"
