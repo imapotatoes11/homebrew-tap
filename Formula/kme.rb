@@ -2,7 +2,7 @@ class Kme < Formula
   desc "WYSIWYG Markdown editor for the terminal"
   homepage "https://github.com/imapotatoes11/kme"
   url "https://github.com/imapotatoes11/kme/archive/refs/tags/v1.9.0.tar.gz"
-  sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
+  sha256 "7cd17943d6246e0a5661a8ac538b93875804b858239c1764f44203bb2ace02bd"
   license "MIT"
   head "https://github.com/imapotatoes11/kme.git", branch: "main"
 
